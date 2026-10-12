@@ -1,0 +1,80 @@
+{
+  "notes": "tapFrac is a normalised SCREEN point measured from the top left. Every UI tap is computed from the real RectTransform over the 1242x2688 canvas reference with the letterbox correction applied: the CanvasScaler expands to 1242x2760 on the 1080x2400 device and AspecterSA centres a 1242x2688 panel inside it, so a panel point at y lands at (36 + y) / 2760 of the screen. The HOW TO PLAY sheet is closed by pressing its dimmed surround near the top rather than the corner glyph: the surround is itself a close control, so that press cannot miss and leave the sheet covering PLAY, and if the sheet somehow never opened the same point lands on an inert plate. The run is paced so these frames are all gameplay: the clock is 100 s, the schedule puts the fifth let-through fruit past 72 s even for a player who never touches the screen, and the worst case measured with these two TURN presses charged as misses is 34 s - while the last frame here lands about 28 s into the run. The pause card also releases itself after 7 s, so a missed RESUME cannot park the capture.",
+  "steps": [
+    {
+      "wait": 3,
+      "shot": "01_MenuScreen"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.5
+      ],
+      "label": "ORDER_FEAST",
+      "wait": 1.6,
+      "shot": "02_OrderChosen"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.836
+      ],
+      "label": "HOW_TO_PLAY",
+      "wait": 1.6,
+      "shot": "03_HowToPlay"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.0812
+      ],
+      "label": "CLOSE_HOW_TO",
+      "wait": 1.2
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.7337
+      ],
+      "label": "PLAY",
+      "waitLoader": true,
+      "shot": "04_GameScreen"
+    },
+    {
+      "tapFrac": [
+        0.785,
+        0.9042
+      ],
+      "label": "TURN_RIGHT",
+      "wait": 3.5,
+      "shot": "05_GameScreen_turn"
+    },
+    {
+      "tapFrac": [
+        0.215,
+        0.9042
+      ],
+      "label": "TURN_LEFT",
+      "wait": 4.5,
+      "shot": "06_GameScreen_series"
+    },
+    {
+      "tapFrac": [
+        0.925,
+        0.0481
+      ],
+      "label": "PAUSE",
+      "wait": 2.5,
+      "shot": "07_PausePop"
+    },
+    {
+      "tapFrac": [
+        0.3068,
+        0.6884
+      ],
+      "label": "RESUME",
+      "wait": 6,
+      "shot": "08_GameScreen_resumed"
+    }
+  ]
+}

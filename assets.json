@@ -1,0 +1,192 @@
+{
+  "style": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art",
+  "palette": [
+    "#120F24",
+    "#1A1630",
+    "#221B3E",
+    "#2A2150",
+    "#8742B7",
+    "#B98CE6",
+    "#F4C646",
+    "#E94D64",
+    "#64BA50",
+    "#FFF1DC"
+  ],
+  "notes": "One art style for the whole project, repeated word for word at the head of every prompt (rule F.1c). Every sprite that takes part in the mechanic declares its orientation in words (rule C.8): the four bowls say their opening faces UP, the chute says its opening faces DOWN, and the two arrows plus the back chevron are marked asymmetric so they are never mirrored. The two nine sliced sprites (plate, gauge fill) ask for a uniform border and a flat stretchable middle, because their .meta gives them a real spriteBorder. No prompt argues about the background colour - the pipeline cuts it away (rule F.1b). There is no audio asset of any kind (rule C.20), no prompt contains the app name and no sprite carries lettering (hard rule 1): the splash and menu mark is an abstract crown whose points are bowls. The icon hero is one object, the golden bowl with a single plum in it.",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, a royal banquet hall at night seen head on, deep indigo marble walls with heavy gold moulding, warm candle light pooling along the lower third, the centre of the frame calm and uncluttered so controls read over it, the upper area darkened, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, the same royal banquet hall pushed further back, deeper indigo and dimmer gold, the whole middle band deliberately empty, dark and low contrast so gameplay reads on top of it, the upper strip darkened so a readout stays legible, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_crown_mark",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_crown_mark.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, an abstract golden crown emblem whose three points are shaped as small footed bowls, a single flat heraldic mark with a thick dark contour, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_bowl_plum",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_bowl_plum.png",
+      "orientation": "front three quarter view, the opening facing UP, symmetric left to right",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single royal footed bowl with a deep amethyst purple glaze and a thick gold rim, the opening clearly facing upward, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_bowl_gold",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_bowl_gold.png",
+      "orientation": "front three quarter view, the opening facing UP, symmetric left to right",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single royal footed bowl with a warm golden glaze and a thick gold rim, the opening clearly facing upward, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_bowl_crimson",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_bowl_crimson.png",
+      "orientation": "front three quarter view, the opening facing UP, symmetric left to right",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single royal footed bowl with a deep crimson glaze and a thick gold rim, the opening clearly facing upward, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_bowl_green",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_bowl_green.png",
+      "orientation": "front three quarter view, the opening facing UP, symmetric left to right",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single royal footed bowl with a fresh green glaze and a thick gold rim, the opening clearly facing upward, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_fruit_plum",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_plum.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single glossy purple plum with a soft highlight, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_fruit_pear",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_pear.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single glossy golden pear with a soft highlight, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_fruit_cherry",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_cherry.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single pair of glossy crimson cherries joined at one stem, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_fruit_lime",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_lime.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single glossy green lime with a soft highlight, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_ring_base",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ring_base.png",
+      "orientation": "seen from a slightly raised angle, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single round serving platter with a thick gold rim and a dark indigo surface, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_chute",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_chute.png",
+      "orientation": "front view, the opening facing DOWN, symmetric left to right",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single short stone and gold kitchen chute mouth, the opening clearly facing downward, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_spill",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_spill.png",
+      "orientation": "symmetric, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single bright splash of juice, a round splatter with thick rounded droplets, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_plate",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_plate.png",
+      "orientation": "square plate, nine slice, a uniform border on all four sides and a flat stretchable middle",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single rounded square plate with a uniform thick raised gold edge and a completely flat empty middle, the border identical on all four sides so the middle can be stretched, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_gauge_fill",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gauge_fill.png",
+      "orientation": "horizontal bar, nine slice, a uniform border on the left and right ends and a flat stretchable middle",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single horizontal bar with softly rounded ends and a completely flat bright middle, the left and right ends identical so the middle can be stretched, a solid bright fill with a glossy highlight, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_arrow_left",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_arrow_left.png",
+      "orientation": "side view, the arrow points LEFT, asymmetric, must not be mirrored",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single thick rounded gold arrow pointing to the left, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_arrow_right",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_arrow_right.png",
+      "orientation": "side view, the arrow points RIGHT, asymmetric, must not be mirrored",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single thick rounded gold arrow pointing to the right, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_icon_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_back.png",
+      "orientation": "side view, the chevron points LEFT, asymmetric, must not be mirrored",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single thick rounded gold chevron pointing to the left, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_icon_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_pause.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single thick rounded gold pause glyph of two upright bars, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_icon_close",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_close.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single thick rounded gold cross glyph of two crossed bars, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_tick",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_tick.png",
+      "orientation": "asymmetric, must not be mirrored",
+      "prompt": "stylized 3D soft clay, chunky glossy forms, thick rounded silhouette, clean game art, one single thick rounded green check mark, one subject centred and fully inside the frame, no other objects, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no film grain, no lens flare, no bokeh, no depth of field"
+    }
+  ]
+}
